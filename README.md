@@ -20,14 +20,20 @@ cp  $(wihch zabbix_server)  $(wihch zabbix_server)_bak
 
 4 安装新的zabbix server二进制文件   
 
-使用源码编译Zabbix server或者是rpm包.   官方默认只提供centos7的rpm包，如需要使用centos6，见https://github.com/zabbixcn/zabbix3.0-rpm  
+使用rpm或者是源码编译Zabbix server.  
+4.1  rpm包安装
+官方默认只提供centos7的rpm包，如需要使用centos6，见https://github.com/zabbixcn/zabbix3.0-rpm 
+rpm2cpio zabbix-server-mysql-3.0.0-1.el6.x86_64.rpm|cpio -div  
+cp ./usr/sbin/zabbix_server /usr/sbin/zabbix_server 
+
+4.2源码安装
 注意：curl版本必须大于等于7.20，centos6为7.19，用此项目提供的curl包升级   
 https://github.com/zabbixcn/curl-rpm   
 步骤      
 ```
 configure  
 make 
-cp  src/zabbix_server/zabbix_server $(wihch zabbix_server)
+cp  src/zabbix_server/zabbix_server $(wihch zabbix_server) 
 ```
 
 5 zabbix_server.conf配置文件修改   
