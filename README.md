@@ -20,7 +20,7 @@ cp  $(wihch zabbix_server)  $(wihch zabbix_server)_bak
 
 4 安装新的zabbix server二进制文件   
 
-使用源码编译Zabbix server.   
+使用源码编译Zabbix server或者是rpm包.   官方默认只提供centos7的rpm包，如需要使用centos6，见https://github.com/zabbixcn/zabbix3.0-rpm  
 注意：curl版本必须大于等于7.20，centos6为7.19，用此项目提供的curl包升级   
 https://github.com/zabbixcn/curl-rpm   
 步骤      
