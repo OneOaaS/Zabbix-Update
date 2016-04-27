@@ -1,5 +1,5 @@
 # Zabbix-Update
-Zabbix升级文档   
+Zabbix升级文档  2.X到3.X升级文档 
 官方文档https://www.zabbix.com/documentation/3.0/manual/installation/upgrade   
 Server upgrade process
 
